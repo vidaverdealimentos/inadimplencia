@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #007525;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.navegacao {
+    display: flex;
+    gap: 80px;
+}
+
+.navegacao-link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.conteudo {
+    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.conteudo-menu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.conteudo-titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo-texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+.botoes:hover {
+    background-color: var(--cor-hover);
+}
+
+.foto {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .navegacao {
+        justify-content: center;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo-menu {
+      width: auto;  
+    }
+
+    .foto {
+        width: 50%;
+    }
+}
